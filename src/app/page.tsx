@@ -1,20 +1,26 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Sale from "./components/Sale";
-import Products from "./components/Products";
-import Footer from "./components/Footer";
-import Management from "./components/Management";
-function Homepage(){
-  return(
-    <div>
-     <Header/>
-     <Hero/>
-     <Sale/>
-     <Products/>
-     <Management />
-     <Footer/>
-    </div>
-  )
-}
+/* eslint-disable @typescript-eslint/no-unused-vars */
 
-export default Homepage;
+import Hero from "./components/hero";
+import Brand from "./brand";
+import Ceramics from "./ceramics";
+import Product from "./components/product";
+import Benefit from "./benefit";
+import Touch from "./components/touch";
+import ProductListing from "./components/productlisting";
+
+
+export default function Home() {
+  return (
+   <>
+   <Hero />
+   <Brand />
+   <Ceramics />
+   <Product />
+   <Benefit />
+   <Touch />
+<ProductListing/>
+   
+
+   </>
+  );
+}
