@@ -37,7 +37,7 @@ const ProductListing = () => {
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="w-full md:w-1/2 h-auto">
               <Image
-              src={require("../../../public/images/fresh/Image Left.png")}
+                src={'/images/fresh/imageLeft.png'}
                 height={800}
                 width={800}
                 alt="chair"
@@ -104,14 +104,13 @@ const ProductListing = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
             {['chair', 'vase', 'silky', 'lamp'].map((item, idx) => (
               <div key={idx} className="w-full">
-                 <Image
-               src={require('../../../public/images/fresh/item/lamp.png')}
+                <Image
+                  src={`/images/fresh/item/${item}.png`}
                   height={700}
                   width={700}
                   alt={item}
                   className="w-full h-auto object-cover transition-transform duration-300 ease-in-out hover:scale-105"
                 />
-               
                 <div className="mt-4 text-[#2A254B]">
                   <p className="py-2">{item === 'chair' ? 'The Dendy Chair' : `The ${item}`}</p>
                   <p>${item === 'chair' ? 250 : item === 'vase' ? 155 : 125}</p>

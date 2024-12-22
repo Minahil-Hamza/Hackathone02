@@ -6,7 +6,7 @@ import Ceramics from "./ceramics";
 import Product from "./components/product";
 import Benefit from "./benefit";
 import Touch from "./components/touch";
-import ProductListing from "./components/productlisting";
+import ProductListing from "./components/ProductListing";
 
 
 export default function Home() {
